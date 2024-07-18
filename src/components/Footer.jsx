@@ -3,7 +3,7 @@ const Footer = () => {
     let year = date.getFullYear()
     return (
         <div className="copyright">
-            <p>Copyright &copy; {year} Rishabh Raj. All right reserved</p>
+            <p>Copyright &copy; {year} Vaibhav Raj. All right reserved</p>
         </div>
     )
 }
