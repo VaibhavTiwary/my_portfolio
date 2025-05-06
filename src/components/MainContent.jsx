@@ -2,7 +2,7 @@ import { useState } from "react"
 import user from "./images/about.png"
 import work1 from "./images/chat.png"
 import work2 from "./images/ecommerce.png"
-// import work3 from "./images/user.png"
+import work3 from "./images/automation.png"
 import resume from "./images/Vaibhav.pdf"
 import Footer from "./Footer"
 
@@ -23,7 +23,7 @@ const MainContent = () => {
                         </div>
                         <div className="about-col-2">
                             <h1 className="sub-title">About Me</h1>
-                            <p className="me">Hi! I'm Vaibhav Raj, a passionate full-stack developer with a degree in Bachelor of Engineering in Computer Science from Sant Longowal Institute of Engineering and Technology. I specialize in building dynamic and responsive web applications using the MERN stack, with skills in React.js, Node.js, Express.js, MongoDB and Python. I have a strong foundation in both frontend and backend development, and I enjoy tackling new challenges and learning continuously. I look forward to contributing my skills and enthusiasm to a dynamic development team and working on innovative projects.</p>
+                            <p className="me">Hi! I'm Vaibhav Raj, a passionate full-stack developer with a degree in Bachelor of Engineering in Computer Science from Sant Longowal Institute of Engineering and Technology. I specialize in building dynamic and responsive web applications using the MERN stack, with skills in React.js, Node.js, Express.js, MongoDB and Java. I have a strong foundation in both frontend and backend development, and I enjoy tackling new challenges and learning continuously. I look forward to contributing my skills and enthusiasm to a dynamic development team and working on innovative projects.</p>
 
                             <div className="tab-titles">
                                 <p className={`tab-links ${activeTab === "skills" ? 'active-link' : ""}`} onClick={() => opentab('skills')}>Skills</p>
@@ -32,17 +32,17 @@ const MainContent = () => {
                             </div>
                             <div className={`tab-contents ${activeTab === "skills" ? 'active-tab' : ""}`} id="skills">
                                 <ul>
-                                    <li><span>Programming Languages</span><br />JavaScript, Python</li>
+                                    <li><span>Programming Languages</span><br />Java, JavaScript, Python</li>
                                     <li><span>Frontend Technologies</span><br />HTML, CSS, React.js, Tailwind CSS, Daisy UI, Material UI</li>
                                     <li><span>Backend Technologies</span><br />Node.js, Express.js</li>
-                                    <li><span>Database</span><br />MongoDB, MySQL, PostgreSQL</li>
-                                    <li><span>Tools & Platforms</span><br />Git, GitHub, RESTful APIs</li>
+                                    <li><span>Database</span><br />MongoDB, MySQL</li>
+                                    <li><span>Tools & Platforms</span><br />Git, GitHub, RESTful APIs, Postman</li>
                                 </ul>
                             </div>
 
                             <div className={`tab-contents ${activeTab === "experience" ? 'active-tab' : ""}`} id="experience">
                                 <ul>
-                                    <li><span>June 2024 - Current</span><br />Virtual Internship at Extion Infotech.</li>
+                                    <li><span>June 2024 - Aug 2024</span><br />Virtual Internship at Extion Infotech.</li>
                                 </ul>
                             </div>
 
@@ -64,7 +64,7 @@ const MainContent = () => {
                         <div>
                             <i className="fa-solid fa-code"></i>
                             <h2>Full Stack Development</h2>
-                            <p style={{ fontSize: "16px" }}>Passionate full stack developer skilled in Javascript, dedicated to crafting robust and user-centric web applications. Excited about leveraging cutting-edge technologies to create seamless digital experiences. Committed to delivering scalable solutions that exceed client expectations. Ready to bring innovation and efficiency to your web projects.</p>
+                            <p style={{ fontSize: "16px" }}>Passionate full stack developer skilled in Java, Javascript, dedicated to crafting robust and user-centric web applications. Excited about leveraging cutting-edge technologies to create seamless digital experiences. Committed to delivering scalable solutions that exceed client expectations. Ready to bring innovation and efficiency to your web projects.</p>
                         </div>
 
                         <div>
@@ -99,13 +99,11 @@ const MainContent = () => {
                         </div>
 
                         <div className="work">
-                            {/* <img src={work3} alt="project" /> */}
-                            <h1 style={{ textAlign: "center" }}>coming soon...</h1>
+                            <img src={work3} alt="project" />
                             <div className="layer">
-                                <h3>Coming soon</h3>
-                                {/* <p>The app connects to the talented people around the world. Download it from play store.</p> */}
-                                <p>Currently Working on a python project!!</p>
-                                <a href="/"><i className="fas fa-external-link-alt"></i></a>
+                                <h3>Up-Mate</h3>
+                                <p>This automation tool Automates scraping of Upwork jobs and logs results to Google Sheets via API.</p>
+                                <a href="https://github.com/VaibhavTiwary/UpMate" target="_blank"><i className="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
