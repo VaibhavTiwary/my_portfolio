@@ -3,7 +3,8 @@ import user from "./images/about.png"
 import work1 from "./images/chat.png"
 import work2 from "./images/ecommerce.png"
 import work3 from "./images/automation.png"
-import resume from "./images/Vaibhav.pdf"
+import work4 from "./images/emp_portal.png"
+import resume from "./images/Vaibhav_Resume_.pdf"
 import Footer from "./Footer"
 
 const MainContent = () => {
@@ -23,7 +24,7 @@ const MainContent = () => {
                         </div>
                         <div className="about-col-2">
                             <h1 className="sub-title">About Me</h1>
-                            <p className="me">Hi! I'm Vaibhav Raj, a passionate full-stack developer with a degree in Bachelor of Engineering in Computer Science from Sant Longowal Institute of Engineering and Technology. I specialize in building dynamic and responsive web applications using the MERN stack, with skills in React.js, Node.js, Express.js, MongoDB and Java. I have a strong foundation in both frontend and backend development, and I enjoy tackling new challenges and learning continuously. I look forward to contributing my skills and enthusiasm to a dynamic development team and working on innovative projects.</p>
+                            <p className="me">Hi! I'm Vaibhav Raj, a passionate full-stack developer with a degree in Bachelor of Engineering in Computer Science from Sant Longowal Institute of Engineering and Technology. I specialize in building dynamic and responsive web applications using the MERN stack, with skills in React.js, Node.js, Express.js, MongoDB, Spring Boot and Java. I have a strong foundation in both frontend and backend development, and I enjoy tackling new challenges and learning continuously. I look forward to contributing my skills and enthusiasm to a dynamic development team and working on innovative projects.</p>
 
                             <div className="tab-titles">
                                 <p className={`tab-links ${activeTab === "skills" ? 'active-link' : ""}`} onClick={() => opentab('skills')}>Skills</p>
@@ -34,9 +35,12 @@ const MainContent = () => {
                                 <ul>
                                     <li><span>Programming Languages</span><br />Java, JavaScript, Python</li>
                                     <li><span>Frontend Technologies</span><br />HTML, CSS, React.js, Tailwind CSS, Daisy UI, Material UI</li>
-                                    <li><span>Backend Technologies</span><br />Node.js, Express.js</li>
+                                    <li><span>Backend Technologies</span><br />Spring Boot, Node.js, Express.js</li>
                                     <li><span>Database</span><br />MongoDB, MySQL</li>
+                                    <li><span>DevOps & Tools</span><br />Git, GitHub, Docker, Render</li>
+                                    <li><span>API Developmen</span><br />RESTful APIs, Postman</li>
                                     <li><span>Tools & Platforms</span><br />Git, GitHub, RESTful APIs, Postman</li>
+                                    <li><span>Others</span><br />Vite, Maven, Nginx</li>
                                 </ul>
                             </div>
 
@@ -48,7 +52,7 @@ const MainContent = () => {
 
                             <div className={`tab-contents ${activeTab === "education" ? 'active-tab' : ""}`} id="education">
                                 <ul>
-                                    <li><span>August 2022 - Current</span><br />Bachelor of Engineering from Sant Longowal Institute of Engineering and Technology</li>
+                                    <li><span>August 2022 - May 2025</span><br />Bachelor of Engineering from Sant Longowal Institute of Engineering and Technology</li>
                                     <li><span>August 2019 - June 2022</span><br />Diploma from Sant Longowal Institute of Engineering and Technology</li>
                                 </ul>
                             </div>
@@ -64,7 +68,7 @@ const MainContent = () => {
                         <div>
                             <i className="fa-solid fa-code"></i>
                             <h2>Full Stack Development</h2>
-                            <p style={{ fontSize: "16px" }}>Passionate full stack developer skilled in Java, Javascript, dedicated to crafting robust and user-centric web applications. Excited about leveraging cutting-edge technologies to create seamless digital experiences. Committed to delivering scalable solutions that exceed client expectations. Ready to bring innovation and efficiency to your web projects.</p>
+                            <p style={{ fontSize: "16px" }}>Passionate full stack developer skilled in Java, Javascript, MERN Stack and Spring Boot dedicated to crafting robust and user-centric web applications. Excited about leveraging cutting-edge technologies to create seamless digital experiences. Committed to delivering scalable solutions that exceed client expectations. Ready to bring innovation and efficiency to your web projects.</p>
                         </div>
 
                         <div>
@@ -104,6 +108,15 @@ const MainContent = () => {
                                 <h3>Up-Mate</h3>
                                 <p>This automation tool Automates scraping of Upwork jobs and logs results to Google Sheets via API.</p>
                                 <a href="https://github.com/VaibhavTiwary/UpMate" target="_blank"><i className="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div className="work">
+                            <img src={work4} alt="project" />
+                            <div className="layer">
+                                <h3>Employee Portal</h3>
+                                <p>This is an Employee Portal that keeps records of all the employees.</p>
+                                <a href="https://ems-frontend-iis3.onrender.com/" target="_blank"><i className="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>

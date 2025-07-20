@@ -1,5 +1,5 @@
 import profile from "./images/profile-pic.png"
-import resume from "./images/Vaibhav.pdf"
+import resume from "./images/Vaibhav_Resume_.pdf"
 
 const Home = () => {
     return (
